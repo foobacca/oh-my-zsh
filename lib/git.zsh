@@ -216,7 +216,7 @@ git_prompt_status2() {
   if $(echo "$INDEX" | grep '^M[ MD] ' &> /dev/null); then
     INDEX_STATUS="$ZSH_THEME_GIT_PROMPT_MODIFIED$INDEX_STATUS"
   fi
-  if $(echo "$INDEX" | grep '^R[ MD]  ' &> /dev/null); then
+  if $(echo "$INDEX" | grep '^R[ MD] ' &> /dev/null); then
     INDEX_STATUS="$ZSH_THEME_GIT_PROMPT_RENAMED$INDEX_STATUS"
   fi
   if $(echo "$INDEX" | grep '^D[ UM] ' &> /dev/null); then
